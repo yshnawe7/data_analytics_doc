@@ -1,0 +1,14 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+
+df=pd.read_csv("/content/DoctorVisits - DA.csv") #make sure about dataset while executing
+
+
+male=df[df['gender']=='male']
+male=len(male)
+female=df[df['gender']=='female']
+female-len(female)
+plt.figure(figsize=(3,3))
+plt.bar(["male", "female"], (male, female),color=["green","blue"],width=0.5)
+plt.show()
